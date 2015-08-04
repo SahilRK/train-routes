@@ -1,0 +1,15 @@
+#Setting up ruby on dev machine
+#Install RVM(Ruby Version Manager). It helps maintain multiple ruby versions and allows to work on them simultaneously.
+\curl -sSL https://get.rvm.io | bash
+
+#Install Ruby along with RVM
+\curl -sSL https://get.rvm.io | bash -s stable --ruby
+
+#Install a particular ruby version
+rvm install version_number
+
+#Note. Keeping rvm updated helps keep track with the latest ruby version
+rvm get stable
+
+#to list the latest rubies
+rvm list known
