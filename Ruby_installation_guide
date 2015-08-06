@@ -13,3 +13,5 @@ rvm get stable
 
 #to list the latest rubies
 rvm list known
+
+Ruby Version : ruby 2.2.2p95
