@@ -11,6 +11,7 @@ class Route
   end
 
   def self.distance_calculator(src_dest,dist,towns_to_be_cal,distance=[])
+    begin
     routes_to_cal = towns_to_be_cal.length - 1
     i = 0
     routes_to_cal.times do
@@ -19,6 +20,9 @@ class Route
       i += 1
     end
     return distance.reduce(:+)
+    rescue
+      "NO ROUTE"
+    end
   end
 
 end
