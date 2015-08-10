@@ -15,7 +15,7 @@ class Route
     i = 0
     routes_to_cal.times do
       index_val_of_towns_dist = src_dest.index(towns_to_be_cal[i]+towns_to_be_cal[i+1])
-      distance << dist[index_val_of_towns_dist].to_i
+      distance << dist[index_val_of_towns_dist]
       i += 1
     end
     return distance.reduce(:+)

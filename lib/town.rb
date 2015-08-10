@@ -7,8 +7,9 @@ class Town
     src_dest_town = []
     distance = []
     @route_towns.each do |town|
-      src_dest_town << town[0]+town[1]
-      distance << town[2]
+      slice_distance = town.length
+      src_dest_town << town[0..1]
+      distance << town[2..slice_distance].to_i
     end
     return src_dest_town, distance
   end
